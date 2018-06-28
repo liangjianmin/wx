@@ -1,3 +1,5 @@
+<import src="../template/yuyue.wxml"/>
+
 <view class="container">
   <!--nav-->
   <view class='nav'>
@@ -7,4 +9,6 @@
       </block>
     </view>
   </view>
+  <!--预约-->
+  <template is="yuyue" data="{{appindex}}"/>
 </view>

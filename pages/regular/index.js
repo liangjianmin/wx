@@ -8,6 +8,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    appindex:{
+
+    },
     titleArr: [{
       id: 0,
       name: '散标列表',

@@ -1,0 +1,18 @@
+<!--预约-->
+<template name="yuyue">
+  <view class='yuyue' wx:if="{{appindex.batch_auto.is_list_open == 1}}">
+    <view class='bg boxsiz' style='background:url(../../assets/images/yuyue-bg.png)'>
+      <view class='yuyue-list boxsiz'>
+        <text class='t1'>往期年化利率</text>
+        <text class='t2'>{{appindex.batch_auto.min_interest_rate}}%~{{appindex.batch_auto.max_interest_rate}}%</text>
+      </view>
+      <view class='yuyue-list boxsiz'>
+        <text class='t1'>期限</text>
+        <text class='t2'>{{appindex.batch_auto.form_invest_month}}~{{appindex.batch_auto.to_invest_month}}个月</text>
+      </view>
+      <view class='yuyue-list boxsiz'>
+        <image src='../../assets/images/yuyue.png' mode='aspectFill'></image>
+      </view>
+    </view>
+  </view>
+</template>
