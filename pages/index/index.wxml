@@ -1,0 +1,37 @@
+<view class="container">
+  <!--banner部分-->
+  <view class='swiper-container'>
+    <swiper class='swiper_box' indicator-color='{{indicatorColor}}' indicator-active-color="{{indicatorActiveColor}}" indicator-dots="{{indicatorDots}}" autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' bindchange='swiperchange'>
+      <block wx:for="{{appindex.ad}}" wx:key="id">
+        <swiper-item>
+          <image bindtap='tapBanner' data-id="{{item.id}}" src="{{item.bg_image}}" class="slide-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--nav部分-->
+  <view class='nav'>
+    <block wx:for="{{appindex.recommendMenu}}" wx:key="id">
+      <view class='nva-list'>
+        <image src='{{item.imageUrl}}'></image>
+        <text class='text'>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <!--预约-->
+  <view class='yuyue' wx:if="{{appindex.batch_auto.is_list_open == 1}}">
+    <view class='bg boxsiz' style='background:url(../../assets/images/yuyue-bg.png)'>
+      <view class='yuyue-list boxsiz'>
+        <text class='t1'>往期年化利率</text>
+        <text class='t2'>{{appindex.batch_auto.min_interest_rate}}%~{{appindex.batch_auto.max_interest_rate}}%</text>
+      </view>
+      <view class='yuyue-list boxsiz'>
+        <text class='t1'>期限</text>
+        <text class='t2'>{{appindex.batch_auto.form_invest_month}}~{{appindex.batch_auto.to_invest_month}}个月</text>
+      </view>
+      <view class='yuyue-list boxsiz'>
+        <image src='../../assets/images/yuyue.png' mode='aspectFill'></image>
+      </view>
+    </view>
+  </view>
+</view>

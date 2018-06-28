@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/regular/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/nav/home-off.png",
+        "selectedIconPath": "assets/images/nav/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/regular/index",
+        "iconPath": "assets/images/nav/regular-off.png",
+        "selectedIconPath": "assets/images/nav/regular-on.png",
+        "text": "投资"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/nav/my-off.png",
+        "selectedIconPath": "assets/images/nav/my-on.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

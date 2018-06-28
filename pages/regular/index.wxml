@@ -1,0 +1,10 @@
+<view class="container">
+  <!--nav-->
+  <view class='nav'>
+    <view class='nav-wrap'>
+      <block wx:for="{{titleArr}}" wx:key="id">
+        <view id="{{item.id}}" class="nav-list {{titleDefaultIndex == item.id ? 'curr' : ''}}" bindtap="tabClick">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+</view>

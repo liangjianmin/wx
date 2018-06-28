@@ -1,0 +1,54 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88rpx;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ff6700;
+}
+
+.nav .nav-wrap {
+  position: relative;
+  display: flex;
+  height: 88rpx;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nav .nav-list {
+  position: relative;
+  flex: 1;
+  font-size: 17px;
+  opacity: 0.75;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav .nav-list.curr {
+  opacity: 1;
+}
+
+.nav .nav-list.curr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -22rpx;
+  width: 50%;
+  height: 4rpx;
+  background-color: #fff;
+  margin: 0 auto;
+}
